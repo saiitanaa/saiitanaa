@@ -1,28 +1,3 @@
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=80&text=%F0%9F%91%8B%20Hi,%20I%27m%20saysaa!&fontSize=38&fontColor=ffffff&fontAlignY=50" />
-
-</div>
-
-  ### https://host.saysaa.fr
----
-
-### 🛠️ CIATools
-
-An all-in-one tool for compiling projects into `.cia` format with a cleaner and easier workflow.
-
-Repository: [CIATools](https://github.com/saysaa/CIATools)
-
----
-
-### ⚙️ ReSharp3DS
-
-An experimental C# runtime and SDK project for running managed C# code on the Nintendo 3DS using nanoCLR / nanoFramework.
-
-Repository: [ReSharp3DS](https://github.com/saysaa/ReSharp3DS)
-
----
-
 ## 💻 Tech Stack
 
 ### Main Languages
