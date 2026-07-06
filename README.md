@@ -6,6 +6,7 @@
 ![C++](https://img.shields.io/badge/C++-00599C.svg?style=for-the-badge\&logo=cplusplus\&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C.svg?style=for-the-badge\&logo=c\&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge\&logo=python\&logoColor=ffdd54)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 
 ### Frameworks & Tools
 
