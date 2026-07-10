@@ -18,7 +18,7 @@
 <img src="https://skillicons.dev/icons?i=kotlin,rust&theme=dark&perline=8" />
 
 ### Tools & OS
-[![My Skills](https://skillicons.dev/icons?i=dotnet,ai,ps,linux,unreal,vscodium,,&theme=dark)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=dotnet,ai,ps,linux,redhat,unreal,vscodium,&theme=dark)](https://skillicons.dev)
 
 </div>
 
