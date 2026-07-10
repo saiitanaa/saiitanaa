@@ -15,7 +15,7 @@
 <img src="https://skillicons.dev/icons?i=c,cs,python,rust&theme=dark&perline=8" />
 
 ### Tools & OS
-<img src="https://skillicons.dev/icons?i=vscodium,clion,rustrover,rider,github,linux &theme=dark&perline=6" />
+[![My Skills](https://skillicons.dev/icons?i=java,kotlin,nodejs,figma&theme=dark)](https://skillicons.dev)
 
 </div>
 
