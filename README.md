@@ -26,14 +26,7 @@
 
 ## 📊 Stats
 
-<div align="center">
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=saiitanaa&show_icons=true&theme=tokyonight&count_private=true" alt="Stats de saiitanaa" height="195" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=saiitanaa&layout=compact&theme=tokyonight" alt="Langages les plus utilisés" height="195" />
-</p>
-
-<br/>
+<div align="center"/>
 
 <img src="https://raw.githubusercontent.com/saiitanaa/saiitanaa/main/github-metrics.svg" alt="Metrics" width="100%" />
 
