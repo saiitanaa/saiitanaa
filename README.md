@@ -12,10 +12,13 @@
 <div align="center">
 
 ### Languages
-<img src="https://skillicons.dev/icons?i=c,cs,python,rust&theme=dark&perline=8" />
+<img src="https://skillicons.dev/icons?i=c,cs,bash&theme=dark&perline=8" />
+
+### I learn
+<img src="https://skillicons.dev/icons?i=kotlin,rust&theme=dark&perline=8" />
 
 ### Tools & OS
-[![My Skills](https://skillicons.dev/icons?i=java,kotlin,nodejs,figma&theme=dark)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=dotnet,ai,ps,linux,unreal,vscodium,,&theme=dark)](https://skillicons.dev)
 
 </div>
 
