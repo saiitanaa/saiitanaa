@@ -1,8 +1,6 @@
 name: Metrics
 on:
-  # S'exécute toutes les nuits à minuit
   schedule: [{cron: "0 0 * * *"}]
-  # Permet de lancer la génération manuellement
   workflow_dispatch:
 jobs:
   github-metrics:
@@ -18,3 +16,5 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Paris
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
