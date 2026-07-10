@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,50:a855f7,100:06b6d4&height=200&section=header&text=saiitanaa&fontSize=70&fontColor=ffffff&fontAlignY=38&desc=Software%20Dev%20%E2%80%A2%203DS%20Modding%20%E2%80%A2%20Tools%20Creator&descSize=18&descAlignY=58&descColor=c4b5fd&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,50:a855f7,100:06b6d4&height=200&section=header&text=saiitanaa&fontSize=70&fontColor=ffffff& width="100%" />
 
 </div>
 
