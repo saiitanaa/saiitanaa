@@ -13,10 +13,9 @@
 
 ### Languages
 <img src="https://skillicons.dev/icons?i=c,cs,python,rust&theme=dark&perline=8" />
-<img src="https://img.shields.io/badge/RustRover-000000?style=for-the-badge&logo=rustrover&logoColor=white" />
 
 ### Tools & OS
-<img src="https://skillicons.dev/icons?i=vscodium,rustrover,clion,rider,github,linux&theme=dark&perline=6" />
+<img src="https://skillicons.dev/icons?i=vscodium,jetbrains,clion,rider,github,linux&theme=dark&perline=6" />
 
 </div>
 
