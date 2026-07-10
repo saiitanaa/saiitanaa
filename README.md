@@ -14,9 +14,6 @@
 ### Languages
 <img src="https://skillicons.dev/icons?i=c,cs,python,rust&theme=dark&perline=8" />
 
-### Frameworks & UI
-<img src="https://skillicons.dev/icons?i=dotnet,avalonia &theme=dark&perline=3" />
-
 ### Tools & OS
 <img src="https://skillicons.dev/icons?i=vscodium,visualstudio,github,linux&theme=dark&perline=6" />
 
