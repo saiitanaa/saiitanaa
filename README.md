@@ -34,5 +34,11 @@
 </div>
 
 ---
+## 📊 Stats
 
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saiitanaa/saiitanaa/output/github-metrics.svg" alt="Metrics" width="100%" />
+
+</div>
 
