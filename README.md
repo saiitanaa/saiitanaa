@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6e40c9,50:a855f7,100:06b6d4&height=200&section=header&text=saiitanaa&fontSize=70&fontColor=ffffff& width="100%" />
+[<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Saiitanaa&section=header&reversal=false&textBg=false&descAlign=64" />
+](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=ReSharp3DS%20SDK)
 
 </div>
 
