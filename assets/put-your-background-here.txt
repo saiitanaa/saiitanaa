@@ -1,0 +1,1 @@
+Mets ton image ici et renomme-la "background.jpg", ou change le chemin dans index.html : --custom-background: url("assets/background.jpg");

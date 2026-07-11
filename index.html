@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaysaaTime!</title>
+    <link rel="stylesheet" href="7.css"> <!-- 7.css For Styling -->
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+
+    <style>
+        /*
+          Change this path to your own background:
+          Example: url("assets/background.jpg")
+        */
+        :root {
+            --custom-background: url("assets/background.jpg");
+        }
+
+        body.page-bg {
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 12px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            /* Distance égale entre toutes les fenêtres */
+            gap: 20px;
+
+            background-color: #101018;
+            background-image:
+                linear-gradient(rgba(10, 10, 20, 0.35), rgba(10, 10, 20, 0.35)),
+                var(--custom-background);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .window {
+            width: min(750px, calc(100vw - 24px));
+        }
+
+        #contact {
+            width: min(750px, calc(100vw - 24px));
+        }
+
+        @media (max-height: 850px) {
+            body.page-bg {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body class="page-bg">
+
+<!-- Window (Top Bar) -->
+<div class="window active" style="max-width: 750px; max-height: 500px;">
+    <div class="title-bar">
+        <div class="title-bar-text">Saysaa.exe</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="window-body">
+        <div class="top-bar">
+            <ul role="menubar" class="can-hover">
+                <li role="menuitem" tabindex="0" aria-haspopup="true">
+                    File
+                    <ul role="menu">
+                        <li role="menuitem"><a href="#menubar">Open <span>Ctrl+O</span></a></li>
+                        <li role="menuitem"><a href="#menubar">Save <span>Ctrl+S</span></a></li>
+                        <li role="menuitem" class="has-divider"><a href="#menubar">Save As... <span>Ctrl+Shift+S</span></a></li>
+                        <li role="menuitem"><a href="#menubar">Exit</a></li>
+                    </ul>
+                </li>
+
+                <li role="menuitem" tabindex="0" aria-haspopup="true">
+                    Subgenres
+                    <ul role="menu">
+                        <li role="menuitem"><a href="#menubar">Undo</a></li>
+                        <li role="menuitem"><a href="#menubar">Copy</a></li>
+                        <li role="menuitem"><a href="#menubar">Cut</a></li>
+                        <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
+                        <li role="menuitem"><a href="#menubar">Delete</a></li>
+                        <li role="menuitem"><a href="#menubar">Find...</a></li>
+                        <li role="menuitem"><a href="#menubar">Replace...</a></li>
+                        <li role="menuitem"><a href="#menubar">Go to...</a></li>
+                    </ul>
+                </li>
+
+                <li role="menuitem" tabindex="0" aria-haspopup="true">
+                    About
+                    <ul role="menu">
+                        <li role="menuitem" tabindex="0" aria-haspopup="true">
+                            Zoom
+                            <ul role="menu">
+                                <li role="menuitem"><button>Zoom In</button></li>
+                                <li role="menuitem"><button>Zoom Out</button></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem"><a href="#menubar">Made in Lyon, France</a></li>
+                    </ul>
+                </li>
+
+                <li role="menuitem" tabindex="0" aria-haspopup="true">
+                    Help
+                    <ul role="menu">
+                        <li role="menuitem"><a href="#menubar">View Help</a></li>
+                        <li role="menuitem"><a href="#menubar">About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="window-content">
+            <img src="assets/welcome.png" alt="Sample Image" style="width: 100%; height: auto;">
+        </div>
+    </div>
+</div>
+
+<!-- Window (Tabs) -->
+<div class="window active" style="max-width: 750px; max-height: 500px;">
+    <div class="title-bar">
+        <div class="title-bar-text">Index mouhahahaaa</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="window-body has-space">
+        <section class="tabs" style="max-width: 500px">
+            <menu role="tablist" aria-label="Sample Tabs">
+                <button role="tab" aria-controls="tab-A" aria-selected="true">Ressources</button>
+            </menu>
+
+            <article role="tabpanel" id="tab-A">
+                <h3>Ressources</h3>
+
+                <p>Welcome to the saysaa.fr index!</p>
+
+                <p>This page serves as a simple hub for accessing my projects, hosted files, GitHub, and services.</p>
+
+                <p><strong>host.saysaa.fr</strong> : All my projects and tools hosted for free</p>
+                <p><strong>GitHub</strong> : open-source code, projects, issues, and releases.</p>
+
+                <p>
+                    <a href="https://host.saysaa.fr" role="button">Open host.saysaa.fr</a>
+                    <a href="https://github.com/saysaa" role="button">Open GitHub</a>
+                </p>
+            </article>
+        </section>
+    </div>
+</div>
+
+<!-- Window (Contact) -->
+<div class="window active" id="contact" style="max-width: 750px; max-height: 800px;">
+    <div class="title-bar">
+        <div class="title-bar-text">Contact</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="window-body has-space">
+        <p>Discord -> <strong>saysaa_</strong></p>
+        <p>Discord Server -> <a href="https://discord.gg/ENBwURmUj8" target="_blank">Click here!</a></p>
+    </div>
+</div>
+
+<!-- JavaScript for Tab Switching -->
+<script>
+    const tabs = document.querySelectorAll('[role="tab"]');
+    const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+            tabPanels.forEach(panel => panel.setAttribute('hidden', 'true'));
+
+            tab.setAttribute('aria-selected', 'true');
+            const selectedPanel = document.getElementById(tab.getAttribute('aria-controls'));
+            selectedPanel.removeAttribute('hidden');
+        });
+    });
+</script>
+
+</body>
+</html>
