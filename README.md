@@ -7,7 +7,7 @@
 
 <div align="center">
   <a href="https://saiitanaa.github.io/saiitanaa/" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&text=Discover%20My%20Portfolio&textBg=false&fontSize=30&animation=twinkling&section=footer" alt="Link to Portfolio" />
+    <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&height=70&text=Discover%20My%20Portfolio&textBg=false&fontSize=25&animation=twinkling" alt="Link to Portfolio" />
   </a>
 </div>
 
