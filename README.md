@@ -7,7 +7,7 @@
 
 <div align="center">
   <a href="https://host.saysaa.fr" target="_blank">
-    <img src="https://img.shields.io/badge/Check_My_Portfolio-101018?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=06b6d4" alt="Portfolio" />
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=70&text=🌐%20Découvrir%20mon%20Portfolio&textBg=false&fontSize=30&animation=twinkling" alt="Lien vers le Portfolio" />
   </a>
 </div>
 
