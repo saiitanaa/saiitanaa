@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaysaaTime!</title>
+    <title>Saiitanaa - Portfolio</title>
     <link rel="stylesheet" href="7.css"> <!-- 7.css For Styling -->
     <link rel="icon" href="assets/icon.png" type="image/x-icon">
 
@@ -48,6 +48,24 @@
             width: min(750px, calc(100vw - 24px));
         }
 
+        .project-card {
+            margin-bottom: 15px;
+        }
+
+        .skill-section {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .skill-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- SYSTÈME DE TRADUCTION CSS --- */
+        body.lang-fr .en { display: none !important; }
+        body.lang-en .fr { display: none !important; }
+
         @media (max-height: 850px) {
             body.page-bg {
                 justify-content: flex-start;
@@ -56,12 +74,13 @@
     </style>
 </head>
 
-<body class="page-bg">
+<!-- La classe lang-fr est définie par défaut -->
+<body class="page-bg lang-fr">
 
-<!-- Window (Top Bar) -->
-<div class="window active" style="max-width: 750px; max-height: 500px;">
+<!-- Window 1 (Welcome & Menu) -->
+<div class="window active" style="max-width: 750px;">
     <div class="title-bar">
-        <div class="title-bar-text">Saysaa.exe</div>
+        <div class="title-bar-text">Saiitanaa.exe</div>
         <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -73,63 +92,45 @@
         <div class="top-bar">
             <ul role="menubar" class="can-hover">
                 <li role="menuitem" tabindex="0" aria-haspopup="true">
-                    File
+                    <span class="fr">Fichier</span><span class="en">File</span>
                     <ul role="menu">
-                        <li role="menuitem"><a href="#menubar">Open <span>Ctrl+O</span></a></li>
-                        <li role="menuitem"><a href="#menubar">Save <span>Ctrl+S</span></a></li>
-                        <li role="menuitem" class="has-divider"><a href="#menubar">Save As... <span>Ctrl+Shift+S</span></a></li>
-                        <li role="menuitem"><a href="#menubar">Exit</a></li>
+                        <li role="menuitem"><a href="#menubar"><span class="fr">Ouvrir</span><span class="en">Open</span> <span>Ctrl+O</span></a></li>
+                        <li role="menuitem"><a href="#menubar"><span class="fr">Sauvegarder</span><span class="en">Save</span> <span>Ctrl+S</span></a></li>
+                        <li role="menuitem" class="has-divider"><a href="#menubar"><span class="fr">Sauvegarder sous...</span><span class="en">Save As...</span> <span>Ctrl+Shift+S</span></a></li>
+                        <li role="menuitem"><a href="#menubar"><span class="fr">Quitter</span><span class="en">Exit</span></a></li>
+                    </ul>
+                </li>
+                
+                <!-- MENU LANGUE -->
+                <li role="menuitem" tabindex="0" aria-haspopup="true">
+                    <span class="fr">Langue</span><span class="en">Language</span>
+                    <ul role="menu">
+                        <li role="menuitem"><button onclick="changeLanguage('fr')">🇫🇷 Français</button></li>
+                        <li role="menuitem"><button onclick="changeLanguage('en')">🇬🇧 English</button></li>
                     </ul>
                 </li>
 
                 <li role="menuitem" tabindex="0" aria-haspopup="true">
-                    Subgenres
+                    <span class="fr">À propos</span><span class="en">About</span>
                     <ul role="menu">
-                        <li role="menuitem"><a href="#menubar">Undo</a></li>
-                        <li role="menuitem"><a href="#menubar">Copy</a></li>
-                        <li role="menuitem"><a href="#menubar">Cut</a></li>
-                        <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
-                        <li role="menuitem"><a href="#menubar">Delete</a></li>
-                        <li role="menuitem"><a href="#menubar">Find...</a></li>
-                        <li role="menuitem"><a href="#menubar">Replace...</a></li>
-                        <li role="menuitem"><a href="#menubar">Go to...</a></li>
-                    </ul>
-                </li>
-
-                <li role="menuitem" tabindex="0" aria-haspopup="true">
-                    About
-                    <ul role="menu">
-                        <li role="menuitem" tabindex="0" aria-haspopup="true">
-                            Zoom
-                            <ul role="menu">
-                                <li role="menuitem"><button>Zoom In</button></li>
-                                <li role="menuitem"><button>Zoom Out</button></li>
-                            </ul>
                         </li>
                         <li role="menuitem"><a href="#menubar">Made in Lyon, France</a></li>
-                    </ul>
-                </li>
-
-                <li role="menuitem" tabindex="0" aria-haspopup="true">
-                    Help
-                    <ul role="menu">
-                        <li role="menuitem"><a href="#menubar">View Help</a></li>
-                        <li role="menuitem"><a href="#menubar">About</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
 
-        <div class="window-content">
-            <img src="assets/welcome.png" alt="Sample Image" style="width: 100%; height: auto;">
+        <div class="window-content" style="text-align: center; padding-top: 10px;">
+            <!-- Bannière Github Animée -->
+            <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Saiitanaa&section=header&reversal=false&textBg=false&descAlign=64" alt="Welcome Saiitanaa" style="width: 100%; height: auto; border-radius: 4px;">
         </div>
     </div>
 </div>
 
-<!-- Window (Tabs) -->
-<div class="window active" style="max-width: 750px; max-height: 500px;">
+<!-- Window 2 (Portfolio - Tabs) -->
+<div class="window active" style="max-width: 750px;">
     <div class="title-bar">
-        <div class="title-bar-text">Index mouhahahaaa</div>
+        <div class="title-bar-text"><span class="fr">Explorateur_de_Projets.exe</span><span class="en">Project_Explorer.exe</span></div>
         <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -138,34 +139,71 @@
     </div>
 
     <div class="window-body has-space">
-        <section class="tabs" style="max-width: 500px">
-            <menu role="tablist" aria-label="Sample Tabs">
-                <button role="tab" aria-controls="tab-A" aria-selected="true">Ressources</button>
+        <section class="tabs">
+            <menu role="tablist" aria-label="Portfolio Tabs">
+                <button role="tab" aria-controls="tab-projects" aria-selected="true"><span class="fr">Mes Projets</span><span class="en">My Projects</span></button>
+                <button role="tab" aria-controls="tab-stack" aria-selected="false">Tech Stack</button>
+                <button role="tab" aria-controls="tab-stats" aria-selected="false"><span class="fr">Statistiques</span><span class="en">Statistics</span></button>
             </menu>
 
-            <article role="tabpanel" id="tab-A">
-                <h3>Ressources</h3>
+            <!-- ONGLET 1 : PROJETS -->
+            <article role="tabpanel" id="tab-projects">
+                <h3><span class="fr">Projets Principaux</span><span class="en">Main Projects</span></h3>
+                
+                <fieldset class="project-card">
+                    <legend><strong>ReSharp3DS</strong></legend>
+                    <p><span class="fr">Développement autour de l'écosystème 3DS.</span><span class="en">Development around the 3DS ecosystem.</span></p>
+                    <a href="https://github.com/saiitanaa/ReSharp3DS" target="_blank" role="button"><span class="fr">Voir le code source</span><span class="en">View source code</span></a>
+                </fieldset>
 
-                <p>Welcome to the saysaa.fr index!</p>
+                <fieldset class="project-card">
+                    <legend><strong>CIATools</strong></legend>
+                    <p><span class="fr">Outils de manipulation et de gestion des fichiers CIA.</span><span class="en">CIA files manipulation and management tools.</span></p>
+                    <a href="https://github.com/saiitanaa/CIATools" target="_blank" role="button"><span class="fr">Voir le code source</span><span class="en">View source code</span></a>
+                </fieldset>
 
-                <p>This page serves as a simple hub for accessing my projects, hosted files, GitHub, and services.</p>
+                <fieldset class="project-card">
+                    <legend><strong>SyphraPass</strong></legend>
+                    <p><span class="fr">Gestionnaire ou utilitaire sécurisé de mots de passe.</span><span class="en">Secure password manager or utility.</span></p>
+                    <a href="https://github.com/saiitanaa/SyphraPass" target="_blank" role="button"><span class="fr">Voir le code source</span><span class="en">View source code</span></a>
+                </fieldset>
+            </article>
 
-                <p><strong>host.saysaa.fr</strong> : All my projects and tools hosted for free</p>
-                <p><strong>GitHub</strong> : open-source code, projects, issues, and releases.</p>
+            <!-- ONGLET 2 : TECH STACK -->
+            <article role="tabpanel" id="tab-stack" hidden>
+                <h3><span class="fr">Stack Technique</span><span class="en">Tech Stack</span></h3>
+                
+                <div class="skill-section">
+                    <p><strong><span class="fr">Langages maîtrisés :</span><span class="en">Mastered languages :</span></strong></p>
+                    <img src="https://skillicons.dev/icons?i=c,cs,bash&theme=dark&perline=8" alt="Languages">
+                </div>
 
-                <p>
-                    <a href="https://host.saysaa.fr" role="button">Open host.saysaa.fr</a>
-                    <a href="https://github.com/saysaa" role="button">Open GitHub</a>
-                </p>
+                <div class="skill-section">
+                    <p><strong><span class="fr">En cours d'apprentissage :</span><span class="en">Currently learning :</span></strong></p>
+                    <img src="https://skillicons.dev/icons?i=kotlin,rust&theme=dark&perline=8" alt="Learning">
+                </div>
+
+                <div class="skill-section">
+                    <p><strong><span class="fr">Outils & OS :</span><span class="en">Tools & OS :</span></strong></p>
+                    <img src="https://skillicons.dev/icons?i=dotnet,ai,ps,linux,redhat,unreal,vscodium&theme=dark&perline=8" alt="Tools">
+                </div>
+            </article>
+
+            <!-- ONGLET 3 : STATS -->
+            <article role="tabpanel" id="tab-stats" hidden>
+                <h3 style="text-align: center;"><span class="fr">Statistiques GitHub</span><span class="en">GitHub Statistics</span></h3>
+                <div style="text-align: center; margin-top: 15px;">
+                    <img src="https://raw.githubusercontent.com/saiitanaa/saiitanaa/main/github-metrics.svg" alt="GitHub Metrics" style="width: 100%; max-width: 500px; border-radius: 4px; box-shadow: inset 0 0 5px rgba(0,0,0,0.5);">
+                </div>
             </article>
         </section>
     </div>
 </div>
 
-<!-- Window (Contact) -->
-<div class="window active" id="contact" style="max-width: 750px; max-height: 800px;">
+<!-- Window 3 (Contact & Footer) -->
+<div class="window active" id="contact" style="max-width: 750px;">
     <div class="title-bar">
-        <div class="title-bar-text">Contact</div>
+        <div class="title-bar-text"><span class="fr">Réseau_Local.exe</span><span class="en">Local_Network.exe</span></div>
         <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>
@@ -173,14 +211,17 @@
         </div>
     </div>
 
-    <div class="window-body has-space">
+    <div class="window-body has-space" style="text-align: center;">
         <p>Discord -> <strong>saysaa_</strong></p>
-        <p>Discord Server -> <a href="https://discord.gg/ENBwURmUj8" target="_blank">Click here!</a></p>
+        <p><span class="fr">Serveur Discord</span><span class="en">Discord Server</span> -> <a href="https://discord.gg/ENBwURmUj8" target="_blank"><span class="fr">Rejoindre la communauté</span><span class="en">Join the community</span></a></p>
+        <hr style="margin: 20px 0;">
+        <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:a855f7,100:6e40c9&height=80&section=footer" style="width: 100%; border-radius: 4px;" alt="Footer wave">
     </div>
 </div>
 
-<!-- JavaScript for Tab Switching -->
+<!-- SCRIPTS -->
 <script>
+    // --- GESTION DES ONGLETS ---
     const tabs = document.querySelectorAll('[role="tab"]');
     const tabPanels = document.querySelectorAll('[role="tabpanel"]');
 
@@ -193,6 +234,22 @@
             const selectedPanel = document.getElementById(tab.getAttribute('aria-controls'));
             selectedPanel.removeAttribute('hidden');
         });
+    });
+
+    // --- GESTION DE LA TRADUCTION ---
+    function changeLanguage(lang) {
+        // Enlever les classes de langue existantes
+        document.body.classList.remove('lang-fr', 'lang-en');
+        // Ajouter la nouvelle langue
+        document.body.classList.add('lang-' + lang);
+        // Sauvegarder dans le navigateur
+        localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // Charger la langue sauvegardée au démarrage (par défaut 'fr')
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('preferredLanguage') || 'fr';
+        changeLanguage(savedLang);
     });
 </script>
 
