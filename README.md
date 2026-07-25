@@ -1,9 +1,4 @@
-<div align="center">
 
-[<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Saiitanaa&section=header&reversal=false&textBg=false&descAlign=64" />
-](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Saiitanaa)
-
-</div>
 
 <div align="center">
   <a href="https://saiitanaa.github.io/saiitanaa/" target="_blank">
