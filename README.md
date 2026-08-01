@@ -16,7 +16,7 @@
 <img src="https://skillicons.dev/icons?i=c,cs,bash&theme=dark&perline=8" />
 
 ### I learn
-<img src="https://skillicons.dev/icons?i=kotlin,rust&theme=dark&perline=8" />
+<img src="https://skillicons.dev/icons?i=swift,rust&theme=dark&perline=8" />
 
 ### Tools & OS
 [![My Skills](https://skillicons.dev/icons?i=dotnet,ai,ps,pr,linux,apple,redhat,unreal,vscodium,&theme=dark)](https://skillicons.dev)
